@@ -1,2 +1,3 @@
-FROM ubuntu/apache2
-COPY index.html /var/www/html/
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
